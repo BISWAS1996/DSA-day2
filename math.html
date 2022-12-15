@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // function getRandomNumber(max,min) {
+        //     return Math.floor(Math.random()*(max-min+1))+min;
+        //     document.write(getRandomNumber);
+        // }
+        // document.write(getRandomNumber(1,15));
+
+
+
+
+        // function getRndInteger(min, max) {
+        //     return Math.floor(Math.random() * (max - min + 1)) + min;
+        // }
+        // console.log(getRndInteger(1,20));
+
+
+
+        // Array sort
+
+
+        // let students=["tapas","yuvi","gutu","kouir","douyt"];
+
+        // document.write(students.sort());
+
+        // mumber sort
+
+        // let roll_no=[27 ,2, 45, 36, 14, 1, 78 ];
+
+        // document.write(roll_no.sort(function(a,b){
+        //     return(a-b);
+        //     return(b-a);
+        // }))
+
+    //     function isleapYear(year){
+    //         if((year%400===0)||(year%4===0 && year%100!==0)){
+    //             document.write("it is leap year");
+    //         }else{
+    //             document.write("it is not leap year");
+
+    //         }
+    //         // return isleapYear(2028);
+    //     }
+    //   isleapYear(2028);
+
+
+// --------------------delete-------------
+
+
+// let arr=[20,45,85,23,15,32];
+
+// let position=3;
+// for(i=position;i<arr.length-1;i++){
+//     arr[i]=arr[i+1];
+// }
+// arr.length=arr.length-1;
+// console.log(arr);
+
+
+// function removeEl(){
+
+    
+// let arr=[20,45,85,23,15,32];
+
+// let position=document.getElementById("position").value;
+// position=parseInt(position);
+
+// for(i=position;i<arr.length-1;i++){
+//     arr[i]=arr[i+1];
+// }
+// arr.length=arr.length-1;
+// console.log(arr);
+
+// }
+// ------------search----------------
+
+
+function searchEl()
+{
+
+let arr=[20,25,24,65,34,74,65,45];
+let item=document.getElementById("item").value;
+let index=undefined;
+for (let i = 0; i <= arr.length; i++) {
+    
+    if(arr[i]==item){
+        index=i;
+        break;
+    }
+}
+
+console.log(index);
+}
+
+
+
+
+
+
+    </script>
+
+<!-- 
+<input type="text" id="position" placeholder="enter position">
+<button onclick="removeEl()">remove element</button> -->
+
+
+<input type="text" id="item" placeholder="entervalue">
+<button onclick="searchEl()">searchElement</button>
+
+
+
+
+</body>
+
+</html>
